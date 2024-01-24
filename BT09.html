@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .user-list {
+      list-style: none;
+      padding: 0;
+    }
+    .user-item {
+      margin-bottom: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Danh sách người dùng</h1>
+    <ul id="userList" class="user-list">
+        <li class="user-item">
+            <span class="user-name">Nguyễn Văn A</span>
+            <button class="edit-button" onclick="editUser(this)">Edit</button>
+        </li>
+        <li class="user-item">
+            <span class="user-name">Vũ Thị B</span>
+            <button class="edit-button" onclick="editUser(this)">Edit</button>
+        </li>
+        <li class="user-item">
+            <span class="user-name">Nguyễn Minh C</span>
+            <button class="edit-button" onclick="editUser(this)">Edit</button>
+        </li>
+    </ul>
+
+    <div>
+        <input type="text" id="editInput">
+        <button onclick="saveEdit()">Edit item</button>
+    </div>
+
+    <script src="./BT09.js"></script>
+</body>
+</html>
